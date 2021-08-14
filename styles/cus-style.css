@@ -31,13 +31,43 @@ header div ul li:hover a {
     background-color: blue;
     color: white;
 }
-.section-01 {
+.container {
     display: grid;
-    grid: 10% 30% 30% 20% 10%;
-
+    justify-content: center;
+    grid-gap: 10px;
+}
+.section-01 {
+    grid-template-columns: 1fr 2fr 1fr;
 }
 .section-01 div {
-    height: 200px;
     background-color: red;
-    margin: 10px;
+    height: 150px;
+}
+.section-02 {
+    grid-template-columns: 30% 40% 30%;
+}
+.section-02 div {
+    background-color: blue;
+    height: 150px;
+}
+.section-03 {
+    grid-template-columns: repeat(3,1fr);
+}
+.section-03 div {
+    background-color: gray;
+    height: 150px;
+}
+.section-04 {
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 10px;
+}
+.section-04 div {
+    background-color: teal;
+    height: 150px;
+}
+.section-04 div:nth-child(odd) {
+    background-color: darkgreen;
 }
