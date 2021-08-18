@@ -29,11 +29,9 @@
             </section>
         </section>
         <script>
-            function displayMassage (){
-                document.writeln('Hello world!');
-            }
-            for (index = 0; index <= 5; index++) {
-                displayMassage() + document.writeln(index);;
+            doMath(10,50,function(n1,n2){return n1 + n2});
+            function doMath(num1,num2,logic){
+                document.write(logic(num1,num2));
             }
         </script>
     </body>
