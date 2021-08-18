@@ -29,15 +29,11 @@
             </section>
         </section>
         <script>
-            var names = ['Reza','Amir','Hosein','Yasi','Kamal','Hamid'];
-            var index;
-            for(index = 0; index <= names.length; index++) {
-                document.writeln('<table>');
-                document.writeln('<tr>');
-                document.writeln('<td>' + names[index] + '</td>');
-                document.writeln('<td>' + ('<a href="#">' + 'clickMe' +'</a>' ) + '</td>');
-                document.writeln('</tr>');
-                document.writeln('</table>');
+            var myNumber = prompt ('Enter the number');
+            if (myNumber % 2 == 0){
+                document.writeln('in yek adade zoj mibasha.');
+            } else {
+                document.writeln('in yek adade fard mibashad.');
             }
         </script>
     </body>
