@@ -29,27 +29,12 @@
             </section>
         </section>
         <script>
-            var num1 = prompt('please enter first Number:');
-            var num2 = prompt('please enter secound Number:');
-            var opt = prompt('enter the operator (+,-,*,/):');
-            var resoult = 0;
-
-            if (opt == '+'){
-                resoult = ((Number (num1)) + (Number (num2)));
+            function displayMassage (){
+                document.writeln('Hello world!');
             }
-            else if (opt == '-'){
-                resoult = ((Number (num1)) - (Number (num2)));
+            for (index = 0; index <= 5; index++) {
+                displayMassage() + document.writeln(index);;
             }
-            else if (opt == '*'){
-                resoult = ((Number (num1)) * (Number (num2)));
-            }
-            else if (opt == '/'){
-                resoult = ((Number (num1)) / (Number (num2)));
-            }
-            else {
-                document.writeln ('!not invalid opt to Math');
-            }
-            document.writeln('<p class="mathResoult">' + num1 + opt + num2 + '=' + resoult + '</p>');
         </script>
     </body>
 </html>
