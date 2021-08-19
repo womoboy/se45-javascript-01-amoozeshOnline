@@ -1,19 +1,14 @@
 body {
-    background-color: gray;
+    background-color: #bbb
 }
-a#google-links {
-    color: whitesmoke;
-    background-color: darkblue;
+a{
+    background-color: teal;
+    color: white;
     padding: 10px;
-    border-radius: 10px;
-    justify-content: center;
-    align-content: center;
-    display: grid;
+    box-sizing: border-box;
+    line-height: 50px;
     text-decoration: none;
-    transition: 0.5s;
 }
-a#google-links:hover {
-    background-color: whitesmoke;
-    color: blue;
-    border-radius: 0;
+a:hover {
+    background-color: darkslategrey;
 }
