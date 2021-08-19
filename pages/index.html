@@ -12,23 +12,40 @@
 
         <title>java script and css grid and flex-box</title>
     </head>
-    <body>
+    <body onload= display_ct();>
         <section class="main-section">
             <section class="section-01">
                 <div class="box box1">box1</div>
                 <div class="box box2">
-                    <div class="slideshow show-day">19</div>
-                    <div class="slideshow show-month">آبان</div>
-                    <div class="slideshow show-year">1400</div>
+                    <div class="slideshow show-day" id="day">19</div>
+                    <div class="slideshow show-month" id="month">آبان</div>
+                    <div class="slideshow show-year" id="year">1400</div>
                     
-                    <div class="slideshow show-sec">33</div>
-                    <div class="slideshow show-min">40</div>
-                    <div class="slideshow show-hour">22</div>
+                    <div class="slideshow show-sec" id="secound">33</div>
+                    <div class="slideshow show-min" id="minuts">40</div>
+                    <div class="slideshow show-hour" id="hour">22</div>
                 </div>
-                <div class="box box3">box3</div>
+                <div class="box box3" >
+                    <span id='ct' ></span>
+                </div>
+                
             </section>
         </section>
         <script>
+            function display_c (){
+                refresh = 1000;
+                mytime = setTimeout('display_ct()',refresh);
+            }
+            function display_ct (){
+                var x = new Date();
+                document.getElementById("secound").innerHTML = x.getSeconds();
+                document.getElementById("minuts").innerHTML = x.getMinutes();
+                document.getElementById("hour").innerHTML = x.getHours();
+                document.getElementById("day").innerHTML = x.getDay();
+                document.getElementById("month").innerHTML = x.getMonth();
+                document.getElementById("year").innerHTML = x.getFullYear();
+                display_c ();
+            }
             
         </script>
     </body>

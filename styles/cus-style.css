@@ -51,19 +51,6 @@ table tr {
 table tr td {
     width: 50%;
 }
-a {
-    text-decoration: none;
-    background-color: blue;
-    padding: 5px;
-    color: white;
-    transition: 0.4s;
-    box-sizing: border-box;
-}
-a:hover {
-    background-color: white;
-    color: blue;
-    border: 2px solid blue;
-}
 .mathResoult {
     direction: ltr;
 }
