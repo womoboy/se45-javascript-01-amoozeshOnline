@@ -26,7 +26,6 @@
                     <div class="slideshow show-hour" id="hour">22</div>
                 </div>
                 <div class="box box3" id="b-3">
-                    <a href="#" name="reza">hiw</a>
                     <p>amin</p>
                     <p>chera</p>
                     <p>chera</p>
@@ -51,15 +50,15 @@
                 display_c ();
             }
 
-            var x = document.getElementById('b-3').children[0];
-            for (var prob in x) {
-                atValue = x.getAttribute(prob);
-                if (!atValue) {
-                    continue;
-                }
-                document.writeln('<p>' + prob + ' ' + atValue +'</p>')
+            var person  = {
+                first_name: 'Reza',
+                last_name:  'Heshmati',
+                age: Number('27') 
             }
-            
+            for (var prob in person) {
+                document.writeln('<p>' + prob + ' = ' + person[prob] + '</p>');
+            }
+
         </script>
     </body>
 </html>
