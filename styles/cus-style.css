@@ -1,6 +1,19 @@
 body {
     background-color: gray;
 }
-p {
+a#google-links {
     color: whitesmoke;
+    background-color: darkblue;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    text-decoration: none;
+    transition: 0.5s;
+}
+a#google-links:hover {
+    background-color: whitesmoke;
+    color: blue;
+    border-radius: 0;
 }
