@@ -1,13 +1,13 @@
 body {
-    background-color: #bbb
+    background-color: whitesmoke;
 }
-a{
-    background-color: teal;
-    color: white;
+a {
+    text-decoration: none;
     padding: 10px;
     box-sizing: border-box;
-    line-height: 50px;
-    text-decoration: none;
+    background-color: teal;
+    color: white;
+    transition: 0.5s;
 }
 a:hover {
     background-color: darkslategrey;
