@@ -26,7 +26,7 @@
                     <div class="slideshow show-hour" id="hour">22</div>
                 </div>
                 <div class="box box3" id="b-3">
-                    <p>hiw</p>
+                    <a href="#" name="reza">hiw</a>
                     <p>amin</p>
                     <p>chera</p>
                     <p>chera</p>
@@ -51,13 +51,13 @@
                 display_c ();
             }
 
-            var myelement = document.getElementById('b-3');
-            for (index = 0; index <= myelement.children.length; index++){
-                if (myelement.children[index].getAttribute('class') != null){
-                    alert('this is a rrr class');
-                } else {
-                    alert(myelement.children[index].tagName);
+            var x = document.getElementById('b-3').children[0];
+            for (var prob in x) {
+                atValue = x.getAttribute(prob);
+                if (!atValue) {
+                    continue;
                 }
+                document.writeln('<p>' + prob + ' ' + atValue +'</p>')
             }
             
         </script>
