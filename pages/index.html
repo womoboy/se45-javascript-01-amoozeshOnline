@@ -1,66 +1,15 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="fa">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, max-scale=1.0, min-scale=1.0"> 
-        <!--links css-->
-        <link rel="stylesheet" href="../styles/cus-style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!--javascript kinks-->
-        <script src="../javascripts/cus-javascript.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/cus-style.css">
+    <title>javaScript Tutorial</title>
+</head>
+<body>
+    
 
-        <title>java script and css grid and flex-box</title>
-    </head>
-    <body onload= display_ct();>
-        <section class="main-section">
-            <section class="section-01">
-                <div class="box box1">box1</div>
-                <div class="box box2">
-                    <div class="slideshow show-day" id="day">19</div>
-                    <div class="slideshow show-month" id="month">آبان</div>
-                    <div class="slideshow show-year" id="year">1400</div>
-                    
-                    <div class="slideshow show-sec" id="secound">33</div>
-                    <div class="slideshow show-min" id="minuts">40</div>
-                    <div class="slideshow show-hour" id="hour">22</div>
-                </div>
-                <div class="box box3" id="b-3">
-                    <a name="link-01" href="#"></a>
-                    <p>amin</p>
-                    <p>chera</p>
-                    <p>chera</p>
-                    <p class="rrr">ssssssss</p>
-                </div>
-                
-            </section>
-        </section>
-        <script>
-            function display_c (){
-                refresh = 1000;
-                mytime = setTimeout('display_ct()',refresh);
-            }
-            function display_ct (){
-                var x = new Date();
-                document.getElementById("secound").innerHTML = x.getSeconds();
-                document.getElementById("minuts").innerHTML = x.getMinutes();
-                document.getElementById("hour").innerHTML = x.getHours();
-                document.getElementById("day").innerHTML = x.getDay();
-                document.getElementById("month").innerHTML = x.getMonth();
-                document.getElementById("year").innerHTML = x.getFullYear();
-                display_c ();
-            }
-
-            var x = document.getElementById('b-3').children[0];
-            for (var prob in x) {
-                atValue = x.getAttribute(prob);
-                if (!atValue) {
-                    continue;
-                }
-                document.writeln('<p>' + prob + ': ' + atValue + '</p>');
-            }
-            
-
-        </script>
-    </body>
+    <script src="../javascripts/cus-javascript.js"></script>
+</body>
 </html>
