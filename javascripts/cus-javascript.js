@@ -1,13 +1,9 @@
-var aTag = document.createElement('a');
-var aText = document.createTextNode('Salam');
-aTag.appendChild(aText);
-
-var bTag = document.createElement('a');
-var bText = document.createTextNode('Chetori');
-bTag.appendChild(bText);
-
-var topDiv = document.getElementById('top-div');
-topDiv.appendChild(aTag);
-topDiv.appendChild(bTag);
-//topDiv.replaceChild(bTag, aTag);
-//topDiv.removeChild(bTag);
+var pTag = document.getElementsByTagName('p')[0];
+pTag.style.color = 'white';
+pTag.style.backgroundColor = 'teal';
+pTag.style.display = 'inline-block'
+pTag.style.padding = '10px'
+pTag.style.position = 'absolute';
+pTag.style.left = '250px';
+pTag.style.top = '100px';
+pTag.style.border = 'solid red 2px';
