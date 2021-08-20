@@ -1,9 +1,8 @@
-var pTag = document.getElementsByTagName('p')[0];
-pTag.style.color = 'white';
-pTag.style.backgroundColor = 'teal';
-pTag.style.display = 'inline-block'
-pTag.style.padding = '10px'
-pTag.style.position = 'absolute';
-pTag.style.left = '250px';
-pTag.style.top = '100px';
-pTag.style.border = 'solid red 2px';
+function onClickText () {
+    var pPar = document.createElement('p');
+    var pText = document.createTextNode('Hi World!');
+    pPar.appendChild(pText);
+
+    var topDiv = document.getElementById('top-div');
+    topDiv.appendChild(pPar);
+}
