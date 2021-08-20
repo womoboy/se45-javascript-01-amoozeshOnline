@@ -1,8 +1,12 @@
 function onClickText () {
-    var pPar = document.createElement('p');
-    var pText = document.createTextNode('Hi World!');
-    pPar.appendChild(pText);
 
+    var ppar = document.createElement('p');
+    var input = document.getElementById('input-01');
+    var ptext = document.createTextNode(input.value);
+    ppar.appendChild(ptext);
+    
     var topDiv = document.getElementById('top-div');
-    topDiv.appendChild(pPar);
+    topDiv.appendChild(ppar);
+    input.value = null;
+    input.focus();
 }
