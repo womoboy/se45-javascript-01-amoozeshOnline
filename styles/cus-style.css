@@ -1,7 +1,14 @@
 body {
-    counter-reset: pNumber;
+    counter-reset: section;
+}
+h1 {
+    counter-reset: subsection;
+}
+h2::before {
+    counter-increment: section;
+    content: "Section " counter(section) ": ";
 }
 p::before {
-    counter-increment: pNumber;
-    content: "Paragraf " counter(pNumber) ": " ;
+    counter-increment: subsection;
+    content: "Paragraf " counter(section) "." counter(subsection) ": ";
 }
