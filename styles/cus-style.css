@@ -1,7 +1,7 @@
 body {
     counter-reset: section;
 }
-h1 {
+h2 {
     counter-reset: subsection;
 }
 h2::before {
@@ -11,4 +11,4 @@ h2::before {
 p::before {
     counter-increment: subsection;
     content: "Paragraf " counter(section) "." counter(subsection) ": ";
-}
+}s
