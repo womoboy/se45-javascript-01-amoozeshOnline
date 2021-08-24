@@ -1,14 +1,8 @@
-body {
+ol {
+    list-style: none;
     counter-reset: section;
 }
-h2 {
-    counter-reset: subsection;
-}
-h2::before {
+li::before {
     counter-increment: section;
-    content: "Section " counter(section) ": ";
+    content: counters(section,".") " ";
 }
-p::before {
-    counter-increment: subsection;
-    content: "Paragraf " counter(section) "." counter(subsection) ": ";
-}s
