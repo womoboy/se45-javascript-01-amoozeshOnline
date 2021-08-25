@@ -1,18 +1,12 @@
-:root {
-    --gray: #555;
-    --white: #ddd;
-    --red: #d41900;
+
+
+#div-light {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 1px solid black;
 }
-.top-div {
-    background-color: var(--gray);
-    color: var(--white);
-}
-.top-div > h2 {
-    background-color: var(--red);
-    padding: 5px;
-}
-.top-div > p {
-    padding: 10px;
-    letter-spacing: 3px;
-    text-indent: 50px;
+#btn-state {
+    margin: auto;
+    text-align: center;padding: 10px;
 }
