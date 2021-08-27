@@ -1,22 +1,32 @@
 
-
-#div-light {
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    border: 1px solid black;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#btn-state {
-    margin: auto;
-    text-align: center;padding: 10px;
-}
-#massage {
-    text-align: center;
+div.container {
     background-color: blue;
-    color: white;
-    width: 150px;
-    margin: auto;
-    padding: 10px;
-    visibility: hidden;
+    width: 700px;
+    height: auto;
+    text-align: center;
+    margin: 10px auto;
     border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.div-input {
+    display: inline-block;
+    width: 30%;
+    height: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+#info-text {
+    background-color: white;
+    color: blue;
+    padding: 10px;
+    width: 150px;
+    margin: 20px auto;
+    border-radius: 20px;
+    visibility: hidden;
 }

@@ -1,16 +1,9 @@
+var $firstName = document.getElementById('first-name');
+var $lastName = document.getElementById('last-name');
+var $infoText = document.getElementById('info-text');
 
-var light = document.getElementById('div-light');
-var massage = document.getElementById('massage');
-
-function lightOn() {
-    light.style.backgroundColor = "yellow";
-    massage.style.visibility = "visible";
-    massage.innerHTML='Turn On Light';
-    
-
-}
-function lightOff(){
-    light.style.backgroundColor = null;
-    massage.style.visibility = "visible";
-    massage.innerHTML='Turn Off Light';
+function printName() {
+    $infoText.style.visibility = "visible";
+    $infoText.innerText = $firstName.value + ' ' + $lastName.value;
+    $firstName.focus();
 }
