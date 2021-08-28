@@ -11,15 +11,15 @@
 
 <body>
     <div class="container">
-        <input type="text" id="first-name" class="div-input" placeholder="enter first name">
-        <input type="text" id="last-name" class="div-input" placeholder="enter the last name">
-        <br>
-        <button id="btn-01" onclick="printName();"> ok</button>
-        <p id="info-text"></p>
+        <label for="first-name" id="label-fn">first name:</label>
+        <input type="text" id="first-name" placeholder="enter first name">
+        <label for="last-name" id="label-ln">last name:</label>
+        <input type="text" id="last-name" placeholder="enter last name">
+        <label for="age" id="label-age">age:</label>
+        <input type="text" id="age" placeholder="enter age">
+        <button id="btn-form" onclick="showInfo();">ok</button>
+        <p id="text-info"></p>
     </div>
-   
-     
-    
     <script src="../javascripts/cus-javascript.js"></script>
 </body>
 
