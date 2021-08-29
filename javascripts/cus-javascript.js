@@ -15,4 +15,6 @@ function priorityAction(){
     $textPriority.style.visibility = "visible";
     $textPriority.innerHTML = $pInfo.innerHTML.indexOf('e');
     //$textPriority.innerHTML = $pInfo.innerHTML.charAt(2);
+    //$textPriority.innerHTML = $pInfo.innerHTML[1];
+
 }
