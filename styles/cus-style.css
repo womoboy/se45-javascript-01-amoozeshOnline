@@ -40,7 +40,7 @@ input:focus {
 button {
     margin: 5px;
 }
-#text-info {
+#text-info, #text-priority {
     width: 50%;
     height: 20px;
     margin: 10px auto;
