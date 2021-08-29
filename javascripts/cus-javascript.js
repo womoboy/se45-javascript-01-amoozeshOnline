@@ -1,11 +1,11 @@
-
-
-var $firstName = document.getElementById('first-name');
-var $lastName = document.getElementById('last-name');
-var $age = document.getElementById('age');
-
-var $textInfo = document.getElementById('text-info');
-
-function showInfo() {
-    $textInfo.innerHTML = $firstName.value + ' ' + $lastName.value + ' ' + $age.value;
+var $info = document.getElementById('info');
+ $user = {
+    firstName: "Reza",
+    lastName: "Heshmati",
+    fullName: function() {
+        return this.firstName + ' ' + this.lastName;
+    }
+}
+function showText() {
+    $info.innerHTML = $user.fullName();
 }
