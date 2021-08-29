@@ -10,8 +10,18 @@
 </head>
 
 <body>
-    <button onclick="showText();">ok</button>
-    <p id="info"></p>
+    <div class="container">
+        <label for="first-name">if your name is reza replace button worked!!</label>
+        <br>
+        <input type="text" placeholder="enter your name" id="first-name">
+        <br>
+        <button id="action-btn" onclick="printText();">ok</button>
+        
+        <button id="replace-btn" onclick="replaceName();">replace</button>
+
+        <p id="text-info"></p>
+    </div>
+    
     <script src="../javascripts/cus-javascript.js"></script>
 </body>
 

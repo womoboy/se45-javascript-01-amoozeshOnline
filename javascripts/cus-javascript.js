@@ -1,11 +1,10 @@
-var $info = document.getElementById('info');
- $user = {
-    firstName: "Reza",
-    lastName: "Heshmati",
-    fullName: function() {
-        return this.firstName + ' ' + this.lastName;
-    }
+var $pInfo = document.getElementById('text-info');
+var $firstName = document.getElementById('first-name');
+
+function printText() {
+    $pInfo.style.visibility = "visible";
+    $pInfo.innerHTML = "your name is: " + $firstName.value;
 }
-function showText() {
-    $info.innerHTML = $user.fullName();
+function replaceName(){
+    $pInfo.innerHTML = $pInfo.innerHTML.replace(/reza/i, "Sara");
 }
